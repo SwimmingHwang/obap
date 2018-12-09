@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="" />
+
+    <item
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/navigation_diary"
+        android:icon="@drawable/diary"
+        android:title=""  />
+
+    <item
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/navigation_camera"
+        android:icon="@drawable/camera"
+        android:title="" />
+
+    <item
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/navigation_like"
+        android:icon="@drawable/blacklike"
+        android:title="" />
+
+    <item
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/navigation_mypage"
+        android:icon="@drawable/user"
+        android:title="" />
+
+</menu>
