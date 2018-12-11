@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        loadFragment(new HomeFragment());
+        loadFragment(new MypageFragment());
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         ab.setIcon(R.drawable.obap_logo) ;
         ab.setDisplayUseLogoEnabled(true) ;
         ab.setDisplayShowHomeEnabled(true) ;
-
+        ab.setDisplayShowTitleEnabled(false);
 
         checkPermission();
 

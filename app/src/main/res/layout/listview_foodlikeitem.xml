@@ -17,7 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_toRightOf="@id/iv_foodlikeimage"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:textSize="20sp" />
 
     <RatingBar
         android:id="@+id/rb_foodlikerate"

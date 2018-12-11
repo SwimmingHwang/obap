@@ -102,35 +102,22 @@ public class MypageFragment extends Fragment {
 
         ws.setJavaScriptEnabled(true);
 
-
+        //웹에서 선호도조사하러가가기 버튼 누르면 이 함수 작동
         mWebView.addJavascriptInterface(new Object()
         {
             @JavascriptInterface           // For API 17+
             public void performClick(String strl)
             {
+
+                //프래그먼트 생성 (선호도조사)
                 Fragment fragment;
                 //fragment = new FoodLikeFragement();
 
                 fragment= FoodLikeFragement.newInstance();
                 setChildFragment(fragment);
 
-
-//                Intent intent = new Intent(
-//                        getContext(), // 현재 화면의 제어권자
-//                        FoodLikeFragement.class); // 다음 넘어갈 클래스 지정
-//                startActivity(intent);
-                //fragment = new FoodLikeFragement();
-
-                Toast.makeText (getContext(), strl, Toast.LENGTH_SHORT).show();
-                //loadFragment(fragment);
-//                FragmentManager fragmentManager = getFragmentManager();
-//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//                fragmentTransaction.add( R.id.fragment_foodlike, fragment );
-//                fragmentTransaction.commit();
             }
         }, "ok");
-
-
 
         return view;
     }

@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -26,6 +27,7 @@ public class LikeFragment extends Fragment {
     NetworkService networkService;
     private String myUrl = "http://52.78.67.243:8000";
 
+    public static ArrayList<String> foodNameList = new ArrayList<String>();
 
     //@BindView(R.id.usermeal_tv1) TextView usermeal_tv1;
     @BindView(R.id.tv_breakfast) TextView tv_breakfast;
@@ -33,7 +35,7 @@ public class LikeFragment extends Fragment {
     @BindView(R.id.tv_dinner) TextView tv_dinner;
     //@BindView(R.id.tv_breakfast) TextView tv1;
 
-    public void bt1_Click()
+    public void get_foodNameList()
     {
         //GET
 
@@ -47,7 +49,8 @@ public class LikeFragment extends Fragment {
 
                     String food_txt = "";
                     for(Food food : foodList){
-                        food_txt += food.getFood() + "\n";
+                        //food_txt += food.getFood() + "\n";
+                        foodNameList.add(food.getFood());
                     }
 
                     tv_breakfast.setText(food_txt);
@@ -64,9 +67,7 @@ public class LikeFragment extends Fragment {
         });
     }
 
-
-
-
+    /*음식 번호가져가서 한글로 얻어오기*/
     public void get_pk_1(int pk)
     {
         //GET
@@ -158,6 +159,7 @@ public class LikeFragment extends Fragment {
         });
     }
 
+    /*먹은 음식 정보 얻어오기 */
     //1 tv_breakfast
     public void usermeal_breakfast()
     {
@@ -168,12 +170,14 @@ public class LikeFragment extends Fragment {
         usermealCall.enqueue(new Callback<List<UserMeal>>() {
             @Override
             public void onResponse(Call<List<UserMeal>> call, Response<List<UserMeal>> response) {
+                Log.i("dydydy","getFoodList funcution in~");
                 if(response.isSuccessful()) {
                     List<UserMeal> breakfastList = response.body();
                     String breakfast_txt = "";
                     for(UserMeal breakfast : breakfastList){
                         Food food = new Food();
                         breakfast_txt = breakfast.getBreakfast();
+                        Log.i("dydydy2","getFoodList funcution in~");
                         //get_pk(Integer.parseInt(tv1.getText().toString()));
 
                     }
@@ -282,15 +286,8 @@ public class LikeFragment extends Fragment {
         application.buildNetworkService("52.78.67.243", 8000);
         networkService = ApplicationController.getInstance().getNetworkService();
 
-        //usermeal_tv1=(TextView)view.findViewById(R.id.usermeal_tv1);
-
-        //bt1_Click();
-        //get_pk(1);
-        //tv_breakfast=(TextView)view.findViewById(R.id.tv_breakfast);
-        //get_pk(1);
-
-
-        //usermeal_breakfast();
+        //선호도 조사 음식 이름 로딩하기
+        get_foodNameList();
 
         usermeal_breakfast();
         tv_breakfast=(TextView)view.findViewById(R.id.tv_breakfast);

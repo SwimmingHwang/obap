@@ -12,7 +12,8 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:id="@+id/navigation_diary"
-        android:icon="@drawable/diary"
+        android:icon="@drawable/diary2"
+        android:color = "#000000"
         android:title=""  />
 
     <item
