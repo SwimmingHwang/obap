@@ -38,7 +38,8 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
             android:layout_toLeftOf="@+id/iv_dycam"
-            android:background="@drawable/search" />
+            android:background="@drawable/search"
+            android:color = "#000000"/>
 
         <ImageView
             android:id="@+id/iv_dycam"
@@ -79,7 +80,8 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
             android:layout_toLeftOf="@+id/iv_dycam"
-            android:background="@drawable/search" />
+            android:background="@drawable/search"
+            android:color = "#000000"/>
 
         <ImageView
             android:id="@+id/iv_dycam"
@@ -120,7 +122,8 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
             android:layout_toLeftOf="@+id/iv_dycam"
-            android:background="@drawable/search" />
+            android:background="@drawable/search"
+            android:color = "#000000"/>
 
         <ImageView
             android:id="@+id/iv_dycam"

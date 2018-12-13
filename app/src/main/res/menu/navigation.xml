@@ -27,7 +27,7 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:id="@+id/navigation_like"
-        android:icon="@drawable/blacklike"
+        android:icon="@drawable/empty_heart"
         android:title="" />
 
     <item

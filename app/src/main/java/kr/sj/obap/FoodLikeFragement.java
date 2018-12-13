@@ -152,18 +152,18 @@ public class FoodLikeFragement extends Fragment {
             mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.tt),LikeFragment.foodNameList.get(i),i);
         }
         */
-        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.tt),LikeFragment.foodNameList.get(0),0);
-        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic(1)),LikeFragment.foodNameList.get(0),0);
-        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic(2)),LikeFragment.foodNameList.get(1),1);
-        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic(3)),LikeFragment.foodNameList.get(2),2);
-        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic(4)),LikeFragment.foodNameList.get(3),3);
-        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic(5)),LikeFragment.foodNameList.get(4),4);
+        //mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.tt),LikeFragment.foodNameList.get(0),0);
+        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic_1),LikeFragment.foodNameList.get(0),0);
+        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic_2),LikeFragment.foodNameList.get(1),1);
+        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic_3),LikeFragment.foodNameList.get(2),2);
+        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic_4),LikeFragment.foodNameList.get(3),3);
+        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic_5),LikeFragment.foodNameList.get(4),4);
 
-        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic(6)),LikeFragment.foodNameList.get(5),5);
-        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic(7)),LikeFragment.foodNameList.get(6),6);
-        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic(8)),LikeFragment.foodNameList.get(7),7);
-        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic(9)),LikeFragment.foodNameList.get(8),8);
-        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic(10)),LikeFragment.foodNameList.get(9),9);
+        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic_6),LikeFragment.foodNameList.get(5),5);
+        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic_7),LikeFragment.foodNameList.get(6),6);
+        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic_8),LikeFragment.foodNameList.get(7),7);
+        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic_9),LikeFragment.foodNameList.get(8),8);
+        mAdapter.addItem(ContextCompat.getDrawable(getContext(),R.drawable.pic_10),LikeFragment.foodNameList.get(9),9);
 
         foodlikelistview.setAdapter(mAdapter);
     }
